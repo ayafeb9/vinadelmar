@@ -1,6 +1,10 @@
 <h1>Listing articles</h1>
-<%= link_to 'New article', new_article_path %> 
-<table>
+<h3>
+  <%= link_to 'New article', new_article_path %> 
+</h3>
+
+<h4>
+<table class="table table-striped">
   <tr>
     <th>Title</th>
     <th>Text</th>
@@ -18,3 +22,4 @@
     </tr>
   <% end %>
 </table>
+</h4>

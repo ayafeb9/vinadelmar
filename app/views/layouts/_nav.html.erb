@@ -19,12 +19,17 @@ example-navbar-collapse-1" aria-expanded="false">
  <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
  <li><a href="#">Hello</a></li>
 
- <li class="dropdown">
+  <button class="dropbtn"><li><%= link_to "Upcoming Socials", about_path %></li></button>
+  <button class="dropbtn"><li><%= link_to "Past Socials", about_path %></li></button>
+ 
+  <li class="dropdown">
    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-aria-expanded="false">Dropdown <span class="caret"></span></a>
+aria-expanded="false">My Socials </a>
  <ul class="dropdown-menu">
- <li><a href="#">Action</a></li>
- <li><a href="#">Another action</a></li>
+   <h5><li><%= link_to "Upcoming Socials", contact_path %></li></h5>
+   <li role="separator" class="divider"></li>
+   <h5><li><%= link_to "Past Socials", contact_path %></li></h5>
+   <li role="separator" class="divider"></li>
  <li><a href="#">Something else here</a></li>
  <li role="separator" class="divider"></li>
  <li><a href="#">Separated link</a></li>
@@ -34,16 +39,9 @@ aria-expanded="false">Dropdown <span class="caret"></span></a>
  </li>
  </ul>
 
- <form class="navbar-form navbar-left" role="search">
- <div class="form-group">
- <input type="text" class="form-control" placeholder="Search">
- </div>
- <button type="submit" class="btn btn-default">Submit</button>
- </form>
-
  <ul class="nav navbar-nav navbar-right">
+   <li><%= link_to "Create An Article", new_article_path %></li>
    <li><%= link_to "About Us", about_path %></li>
-   <li><%= link_to "Contact Us", contact_path %></li>
   
    <% if !current_user %>
    <li><%= link_to "Sign Up", new_user_registration_path %></li>
@@ -55,7 +53,7 @@ aria-expanded="false">Dropdown <span class="caret"></span></a>
          aria-expanded="false"><%= current_user.username %> </a>
      <ul class="dropdown-menu">
      <li><a href="#">Action</a></li>
-     <li><a href="#">Another action</a></li>
+     <li><%= link_to "Contact Us", contact_path %></li>
      <li><%= link_to "Edit My Profile", edit_user_registration_path %></li>
      <li role="separator" class="divider"></li>
      <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
