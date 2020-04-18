@@ -1,17 +1,22 @@
 <p>
-  <strong>Title:</strong>
-  <%= @article.title %>
+  <h2><strong>Title:</strong></h2>
+  <h1> <%= @article.title %> </h1>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @article.user.username %>
 </p>
  
 <p>
-  <strong>Text:</strong>
+  <strong>Text:</strong><br />
   <%= @article.text %>
 </p>
 
 <h2>Comments</h2>
 <%= render @article.comments %>
 
-<h2>Add a comment:</h2>
+<h3>Add a comment:</h3>
 <%= render 'comments/form' %>
 
 <%= link_to 'Edit', edit_article_path(@article) %> |

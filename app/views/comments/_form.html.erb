@@ -1,4 +1,5 @@
 <%= form_for([@article, @article.comments.build]) do |f| %>
+  <h4>
   <p>
     <%= f.label :commenter %><br>
     <%= f.text_field :commenter %>
@@ -10,4 +11,5 @@
   <p>
     <%= f.submit %>
   </p>
+  </h4>
 <% end %>
