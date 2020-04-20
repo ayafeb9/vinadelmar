@@ -145,7 +145,6 @@ ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
  <% @last_articles.each do |a| %>
    <h4>
      <strong><%= link_to a.title, a %></strong><br />
-     Created by: <%= a.user.username %>
      <p> <%= truncate(a.text) %> </p></h4>
  <% end %>
  </div>
