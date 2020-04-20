@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   # get 'welcome/index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :contacts
   resources :articles do
     resources :comments
   end
