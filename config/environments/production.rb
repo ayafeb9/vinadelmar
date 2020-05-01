@@ -93,5 +93,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # added for Udemy course
-  config.action_mailer.default_url_options = { host: 'https://vinadelmar.herokuapp.com/' }
+  config.action_mailer.default_url_options = { :host => 'https://vinadelmar.herokuapp.com/' }
 end
