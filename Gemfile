@@ -28,6 +28,7 @@ gem 'bootstrap-sass-extras', '~> 0.0.2'
 gem 'devise', '~> 4.2'
 gem 'simple_form'
 gem 'pg', '~> 0.18.4'
+gem 'sendgrid-ruby'
 
 
 # Use CoffeeScript for .coffee assets and views
