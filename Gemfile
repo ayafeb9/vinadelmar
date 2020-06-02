@@ -30,6 +30,9 @@ gem 'simple_form'
 gem 'pg', '~> 0.18.4'
 gem 'sendgrid-ruby'
 
+#using rubydoc.info videojs
+gem 'video-js-rails'
+gem 'record_tag_helper', '~> 1.0'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
