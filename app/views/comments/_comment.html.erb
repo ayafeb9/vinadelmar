@@ -1,15 +1,10 @@
-<p>
-  <strong>Commenter:</strong>
-  <%= comment.commenter %>
-</p>
- 
-<p>
-  <strong>Comment:</strong>
-  <%= comment.body %>
-</p>
+<div class="media">
+ <div class="pull-left">
+ <%= testing  %>
+ </div>
+ <div class="media-body">
+ <p class="media-heading pull-right">
+   <%= time_ago_in_words(comment.created_at) %>
+ </p><br /
 
-<p>
-  <%= link_to 'Destroy Comment', [comment.article, comment],
-               method: :delete,
-               data: { confirm: 'Are you sure?' } %>
-</p>
+   <%= @comments.body %>

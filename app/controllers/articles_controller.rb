@@ -1,13 +1,14 @@
 class ArticlesController < ApplicationController
-  http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show, :new, :create, :edit]
+  #http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show, :new, :create, :edit]
   before_action :authenticate_user!
 
   def index
-    @articles = Article.all 
+    @articles = Article.all.order('created_at DESC') 
   end
 
   def show
     @article = Article.find(params[:id])
+    @comment = @article.comments
   end
 
   def new
