@@ -14,8 +14,14 @@
  *= require video-js
  *= require_self
  */
+@import "normalize";
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "journal";
+.wrapper {
+	width: 60%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
