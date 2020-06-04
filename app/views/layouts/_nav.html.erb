@@ -16,27 +16,9 @@ example-navbar-collapse-1" aria-expanded="false">
  <!-- Collect the nav links, forms, and other content for toggling -->
  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
  <ul class="nav navbar-nav">
- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-  <button class="dropbtn"><li><%= link_to "All Chapters", articles_path %></li></button>
-
-  <button class="dropbtn"><li><%= link_to "Discussion Board", about_path %></li></button>
-  <button class="dropbtn"><li><%= link_to "Something Else", about_path %></li></button>
- 
-  <li class="dropdown">
-   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-aria-expanded="false">My Socials </a>
- <ul class="dropdown-menu">
-   <h5><li><%= link_to "Upcoming Socials", contact_path %></li></h5>
-   <li role="separator" class="divider"></li>
-   <h5><li><%= link_to "Past Socials", contact_path %></li></h5>
-   <li role="separator" class="divider"></li>
- <li><a href="#">Something else here</a></li>
- <li role="separator" class="divider"></li>
- <li><a href="#">Separated link</a></li>
- <li role="separator" class="divider"></li>
- <li><a href="#">One more separated link</a></li>
- </ul>
- </li>
+  <li><%= link_to "All Chapters", about_path %></li>
+  <li><%= link_to "Discussion Board", about_path %></li></button>
+  <li><%= link_to "Something Else", about_path %></li></button> 
  </ul>
 
  <ul class="nav navbar-nav navbar-right">
