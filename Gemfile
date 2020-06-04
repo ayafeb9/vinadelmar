@@ -34,6 +34,9 @@ gem 'sendgrid-ruby'
 gem 'video-js-rails'
 gem 'record_tag_helper', '~> 1.0'
 
+# added for tensorflow bit
+gem 'haml'
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
