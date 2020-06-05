@@ -6,10 +6,14 @@ Rails.application.routes.draw do
   # get 'welcome/index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :contacts
-  resources :posts
+  
+  resources :posts do
+    resources :comments
+  end
+
   resources :articles do
     resources :comments
   end
+  
   root 'pages#index'    
-#  root 'welcome#index'
 end
