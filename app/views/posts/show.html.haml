@@ -3,8 +3,12 @@
   %h2.strong= @post.user.username
   %p= @post.content
 
-#buttons_right
-  = link_to "Reply", new_post_path
+#answers
+  %h2= "#{@post.answers.count} replies"
+  = render @post.answers
+
+%h5
+  =render "answers/form"
 
 #buttons_left
   = link_to "Edit", edit_post_path(@post)

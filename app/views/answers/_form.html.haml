@@ -1,0 +1,3 @@
+= simple_form_for([@post, @post.answers.build]) do |f|
+  =f.input :answer, label: 'Reply to thread'
+  = f.button :submit, "Post", class: "btn btn-success"
