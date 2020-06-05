@@ -1,11 +1,12 @@
 #post_content
   %h1= @post.title
-  %h2= @post.user.username
+  %h2.strong= @post.user.username
   %p= @post.content
 
-#buttons
+#buttons_right
   = link_to "Reply", new_post_path
 
-= link_to "Edit", edit_post_path(@post)
-= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to do this?" }
-= link_to "Return", posts_path
+#buttons_left
+  = link_to "Edit", edit_post_path(@post)
+  = link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to do this?" }
+  = link_to "Return", posts_path
