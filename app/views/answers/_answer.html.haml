@@ -1,5 +1,9 @@
-.answer
-  %p= answer.answer
-  %p= answer.user.username
-  = link_to "Edit", edit_post_answer_path(answer.post, answer)
-  = link_to "Delete", [answer.post, answer], method: :delete, data: {confierm: "Are you sure?" }
+#post_content
+  #answers
+    .answer.clearfix
+      .content
+        %p.answer_content= answer.answer
+        %p.answer_author= answer.user.username
+      .buttons
+        = link_to "Edit", edit_post_answer_path(answer.post, answer)
+        = link_to "Delete", [answer.post, answer], method: :delete, data: {confirm: "Are you sure?" }

@@ -23,9 +23,105 @@
 		line-height: 1.5;
 		font-weight: 350;
 	}
+	.buttons_right_yellow {
+		float: right;
+			a {
+				line-height: 60px;
+				background: #E4D969;
+				padding: .5em 1em;
+				border-radius: 0.2em;
+				color: black;
+				text-decoration: none;
+				font-weight: 450;
+				font-size: 1.4em;
+			}
+		}
+	#answers {
+		.answer {
+			border-bottom: 1px solid #d1d1d1;
+			padding-bottom: 1em;
+			margin-bottom: 1em;
+			.content {
+				width: 75%;
+				float: left;
+			}
+			.buttons_right_yellow {
+				float: right;
+					a {
+						line-height: 60px;
+						background: #E4D969;
+						padding: .5em 1em;
+						border-radius: 0.2em;
+						color: black;
+						text-decoration: none;
+						font-weight: 450;
+					}
+			}
+			.buttons {
+				width: 25%;
+				float: left;
+				font-size: 0.8em;
+				text-align: right;
+				padding-top: 1.2em;
+				a {
+					color: #777777;
+					background: #E4D969;
+					padding: .5em 1em;
+					border-radius: 0.2em;
+					text-decoration: none;
+					margin-right: 2%;
+				}
+			}
+			.answer_content {
+				margin: 0;
+				padding: 0;
+				color: #777777;
+				line-height: 1.5;
+				font-size: 1em;
+				font-weight: 350;		
+			}
+			.answer_author {
+				color: #F23E29;
+				margin-top: 0.5rem;
+				font-size: 1rem;
+				font-weight: 600;
+			}
+		}
+		.input[type="submit"] {
+			background: #397CAC;
+			border: none;
+			color: white;
+			font-weight: 100;
+			padding: .5em 1em;
+			border-radius: .2em;
+		}
+		.textarea {
+			width: 100%;
+			min-height: 200px;
+			border: 1px solid #d1d1d1;
+			border-radius: .2em;
+			margin: 1em 0;
+		}
+	}
 }
 
-#buttons_right {
+#input[type="submit"] {
+	background: #397CAC;
+	border: none;
+	color: white;
+	font-weight: 100;
+	padding: .5em 1em;
+	border-radius: .2em;
+}
+#textarea {
+	width: 100%;
+	min-height: 200px;
+	border: 1px solid #d1d1d1;
+	border-radius: .2em;
+	margin: 1em 0;
+}
+
+#buttons_right_orange {
 	float: right;
 	a {
 		line-height: 60px;
@@ -38,7 +134,21 @@
 	}
 }
 
-#buttons_left {
+#buttons_right_yellow {
+	float: right;
+	a {
+		line-height: 60px;
+		font-size: 2em;
+		background: #E4D969;
+		padding: .5em 1em;
+		border-radius: 0.2em;
+		color: black;
+		text-decoration: none;
+		font-weight: 450;
+	}
+}
+
+#buttons_left_yellow {
 	float: left;
 	a {
 		line-height: 60px;
@@ -48,6 +158,19 @@
 		color: white;
 		text-decoration: none;
 		font-weight: 400;
+	}
+}
+
+#buttons_left_orange {
+	float: left;
+	a {
+		line-height: 60px;
+		background: #E99440;
+		padding: .5em 1em;
+		border-radius: 0.2em;
+		color: black;
+		text-decoration: none;
+		font-weight: 450;
 	}
 }
 

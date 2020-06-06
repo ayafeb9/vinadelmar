@@ -2,15 +2,16 @@
   %h1= @post.title
   %h2.strong= @post.user.username
   %p= @post.content
+  .buttons_right_yellow
+    = link_to "Edit", edit_post_path(@post)
+    = link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to do this?" }
+    = link_to "Return", posts_path
+%br
 
-#answers
-  %h2= "#{@post.answers.count} replies"
-  = render @post.answers
-
-%h5
-  =render "answers/form"
-
-#buttons_left
-  = link_to "Edit", edit_post_path(@post)
-  = link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to do this?" }
-  = link_to "Return", posts_path
+  #answers
+    %h4= "#{@post.answers.count} replies"
+    %h3
+      = render @post.answers
+#post_content
+  %h1
+    =render "answers/form"

@@ -1,7 +1,7 @@
 #post_content
-  %h2
+  %h1
     = simple_form_for @post do |f|
       = f.input :title, label: 'Question'
       = f.input :content, label: 'Details of question', :input_html => { :rows => 10 }
-      = f.button :submit, "Post", class: "btn btn-success"
-      = link_to "Cancel", :back, {:class => "btn btn-light"}
+      = f.button :submit, "Post", class: "btn btn-success btn-lg"
+      = link_to "Cancel", :back, {:class => "btn btn-light btn-lg"}
