@@ -36,6 +36,7 @@ gem 'record_tag_helper', '~> 1.0'
 
 # added for tensorflow bit
 gem 'haml'
+gem 'closure_tree'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

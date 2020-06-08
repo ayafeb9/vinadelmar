@@ -1,5 +1,6 @@
 class AnswersController < ApplicationController
   before_action :find_post, only: [:edit, :update, :destroy, :create]
+  before_action :set_answer, only: [:destroy]
 
   def create
     @answer = @post.answers.create(params[:answer].permit(:answer))
@@ -34,10 +35,15 @@ class AnswersController < ApplicationController
   end
 
   private 
+  def answer_params
+    params.require(:answer).permit :post_id, :user_id, :content
   def find_post
     @post = Post.find(params[:post_id])
   end
   def find_answer
     @answer = @post.answers.find(params[:id])
+  end
+  def set_answer
+    @answer = Answer.find_by id: params[:id]
   end
 end
