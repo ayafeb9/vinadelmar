@@ -4,6 +4,10 @@
       .content
         %p.answer_content= answer.answer
         %p.answer_author= answer.user.username
+        %p.answer_date
+          posted
+          = time_ago_in_words(answer.created_at)
+          ago
       .buttons
         = link_to "Edit", edit_post_answer_path(answer.post, answer)
         = link_to "Delete", [answer.post, answer], method: :delete, data: {confirm: "Are you sure?" }

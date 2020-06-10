@@ -37,6 +37,7 @@ class AnswersController < ApplicationController
   private 
   def answer_params
     params.require(:answer).permit :post_id, :user_id, :content
+  end
   def find_post
     @post = Post.find(params[:post_id])
   end
@@ -46,4 +47,6 @@ class AnswersController < ApplicationController
   def set_answer
     @answer = Answer.find_by id: params[:id]
   end
+
 end
+

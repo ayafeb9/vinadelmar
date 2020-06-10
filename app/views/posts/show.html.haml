@@ -1,6 +1,10 @@
 #post_content
   %h1= @post.title
   %h2.strong= @post.user.username
+  %h3
+    posted
+    = time_ago_in_words(@post.created_at)
+    ago
   %p= @post.content
   .buttons_right_yellow
     = link_to "Edit", edit_post_path(@post)

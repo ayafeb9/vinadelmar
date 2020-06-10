@@ -17,9 +17,15 @@
 		color: #FF5B00;
 		margin-top: 0;
 	}
+	h3 {
+		font-weight: 75;
+		font-size: 1.1em;
+		color: #EC9845;
+		margin-top: 0;
+	}
 	p {
 		color: #777777;
-		font-size: 0.9em;
+		font-size: 1em;
 		line-height: 1.5;
 		font-weight: 350;
 	}
@@ -77,13 +83,19 @@
 				padding: 0;
 				color: #777777;
 				line-height: 1.5;
-				font-size: 1em;
+				font-size: 0.85em;
 				font-weight: 350;		
 			}
 			.answer_author {
 				color: #F23E29;
 				margin-top: 0.5rem;
-				font-size: 1rem;
+				font-size: 1.2rem;
+				font-weight: 550;
+			}
+			.answer_date {
+				color: #EC9845;
+				margin-top: 0.5rem;
+				font-size: 1.2rem;
 				font-weight: 600;
 			}
 		}
